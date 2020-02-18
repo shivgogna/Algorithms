@@ -18,11 +18,11 @@ Declare flattenHelper function
 Return resultArr
 */
 function flatten(arr) {
-  const resultArr = [];
+  const finalArr = [];
   const flattenHelper = subArr => {
     for (let i = 0; i < arr.length; i++) {
       if (typeof subArr[i] === "Number") {
-        resultArr.push(subArr[i]);
+        finalArr.push(subArr[i]);
       } else {
         flattenHelper(subArr[i]);
       }
@@ -30,5 +30,5 @@ function flatten(arr) {
   };
   flattenHelper(arr);
 
-  resultArr;
+  finalArr;
 }
