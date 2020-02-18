@@ -30,5 +30,5 @@ function flatten(arr) {
   };
   flattenHelper(arr);
 
-  finalArr;
+   return finalArr;
 }
